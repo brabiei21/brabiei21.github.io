@@ -12,7 +12,7 @@ title                    : "Behrad Rabiei"
 title_separator          : "-"
 name                     : &name "Behrad Rabiei"
 description              : &description "I have a Masters from UCSD in Robotics and I am extremely excited about Localization, Mapping, and Planning."
-url                      : https://brabiei21.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://brabiei21.github.io/brabiei.gitub.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "brabiei21/brabiei.gitub.io"
 
