@@ -22,9 +22,9 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Behrad"
+  name             : "Behrad Rabiei"
   pronouns         : # example: "she/her"  
-  bio              : "Robotics Engineer"
+  bio              : "Robotics Engineer currently working on Localization, Mapping, and Planning at UCSD."
   location         : "San Diego"
   employer         : "UCSD"
   uri              : # URL
