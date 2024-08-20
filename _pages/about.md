@@ -17,7 +17,7 @@ TLDR
 
 Research Interests
 ======
-what have I done and what am I interested in
+I'm passionate about pushing the boundaries of robotics planning, localization, and mapping. Lately, I've been captivated by the idea of using large language models (LLMs) to revolutionize how robots plan and navigate. My current research dives into combining LLMs with linear temporal logics (LTLs), automatons, and semantic maps to create smarter, more autonomous robots. I’m excited about the potential to bring a new level of intelligence and adaptability to robotic systems!
 
 Industry Experiences
 ======
