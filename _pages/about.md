@@ -8,12 +8,12 @@ redirect_from:
 ---
 TLDR
 ======
-- 🚀 **Innovator in Machine Learning**: Developed cutting-edge data retrieval systems and AI-driven tools for industry leaders like NASA and RoboCoach.
-- 🤖 **Robotics Enthusiast**: Contributed to the testing and optimization of Amazon's first autonomous robot, Proteus.
-- 🌍 **Sustainability Advocate**: Transitioned a major manufacturing facility from preventative to predictive maintenance at Takeda, enhancing operational efficiency.
+- 🚀 **Innovator in Machine Learning**: Developed cutting-edge data retrieval systems and AI-driven tools for industry leaders like **NASA** and **RoboCoach**.
+- 🤖 **Robotics Enthusiast**: Contributed to the testing and optimization of **Amazon**'s first autonomous robot, Proteus.
+- 🌍 **Sustainability Advocate**: Transitioned a major manufacturing facility from preventative to predictive maintenance at **Takeda**, enhancing operational efficiency.
 - 💻 **Tech-Savvy Developer**: Expertise in Python, C++, ROS, and prompt engineering, with a knack for creating seamless user interfaces and experiences.
 - 📊 **Data-Driven Problem Solver**: Conducted detailed cost analysis and system redundancies to drive decision-making and secure project funding.
-- 🔧 **Process Optimizer**: Streamlined manufacturing processes at SpaceX, boosting production by over 100% and improving quality control.
+- 🔧 **Process Optimizer**: Streamlined manufacturing processes at **SpaceX**, boosting production by over 100% and improving quality control.
 
 Research Interests
 ======
