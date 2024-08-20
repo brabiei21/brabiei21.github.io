@@ -1,12 +1,13 @@
 ---
 permalink: /
-title: "Hello there, my name is Behrad and here is some high level information about me 😁."
+title: "Hello there, my name is Behrad 😁."
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-
+TLDR
+======
 - 🚀 **Innovator in Machine Learning**: Developed cutting-edge data retrieval systems and AI-driven tools for industry leaders like NASA and RoboCoach.
 - 🤖 **Robotics Enthusiast**: Contributed to the testing and optimization of Amazon's first autonomous robot, Proteus.
 - 🌍 **Sustainability Advocate**: Transitioned a major manufacturing facility from preventative to predictive maintenance at Takeda, enhancing operational efficiency.
