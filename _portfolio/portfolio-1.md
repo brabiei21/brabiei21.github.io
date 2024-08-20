@@ -39,7 +39,7 @@ The generated panoramic image gives a reasonable representation of the captured 
 
 
 - **Figure 1:** IMU Data before Processing.
-  ![Pre Processing](/images/)
+  ![Pre Processing](/images/IMU_init.png)
 - **Figure 2:** IMU Data after Processing.
 - **Figure 3:** Euler Angles of VICON.
 - **Figure 4:** Motion Estimate Vs. VICON (Initial).
