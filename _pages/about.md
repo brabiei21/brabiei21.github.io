@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hello there, my name is Behrad 😁."
+title: "Hello there, my name is Behrad 😁"
 author_profile: true
 redirect_from: 
   - /about/
@@ -19,7 +19,7 @@ Research Interests
 ======
 I'm passionate about pushing the boundaries of robotics planning, localization, and mapping. Lately, I've been captivated by the idea of using large language models (LLMs) to revolutionize how robots plan and navigate. My current research dives into combining LLMs with linear temporal logics (LTLs), automatons, and semantic maps to create smarter, more autonomous robots. I’m excited about the potential to bring a new level of intelligence and adaptability to robotic systems!
 
-Industry Experiences
+Industry Experience
 ======
 I am an experienced professional with a diverse background in machine learning, robotics, and system architecture. My work spans across multiple high-impact internships and co-op positions, where I have developed and implemented innovative solutions in data retrieval, predictive maintenance, and autonomous systems. At **NASA**, I built a state-of-the-art data analysis system for climate data, while at **RoboCoach**, I led the development of an AI-driven code generation tool. My experience also includes designing complex test plans for **Amazon**’s first autonomous robot and optimizing manufacturing processes at **SpaceX**. With a strong foundation in machine learning, ROS, and software development, I bring a robust technical skill set and a proven track record of delivering results in challenging environments.
 
