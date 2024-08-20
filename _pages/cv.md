@@ -54,6 +54,7 @@ Work experience
 Skills
 ======
 * Robot Operating System (ROS)
+* JAX
 * Machine Learning
   * Statistical Models and Analysis
   * PyTorch
