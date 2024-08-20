@@ -17,7 +17,12 @@ Education
 Work experience
 ======
 * **NASA - Machine Learning Intern (June 2024 - August 2024)**
-  * 
+  * Developed an advanced data retrieval and analysis system for CMIP 6, handling over 30PB of climate data.
+  * Innovated an efficient parsing method to filter relevant datasets from a pool of over 13.6 million entries based on user queries.
+  * Integrated LangChain and OpenAI infrastructure to create a dynamic analysis engine, tailored to user-specific dataset inquiries.
+  * Submitted the project for presentation at the American Geophysical Union (AGU) 2024, the largest Earth and Space Science conference.
+  * Designed a custom Streamlit-based UI to facilitate a conversational and intuitive user experience for data analysis tasks.
+    
 * **RoboCoach - Machine Learning Intern (May 2023 - May 2024)**
   * Designed and implemented an open-source project that automatically generates code based on natural language conversation in Python.
   * Integrated LangChain and OpenAI APIs to prompt multiple LLMs to implement the code generation mechanism in the application.
@@ -45,20 +50,17 @@ Work experience
   * Introduced two new steps in the assembly process to decrease assembly time (grease plating/poppet).
   * Root caused two major waves of valve failures that led to approximately 60 valves failing per day (swage tool/retainer cap/poppet).
   * Generated a step-by-step corrective action document for technicians to rectify production losses due to test failures.
-
-Research Experience
-======
-* Existential robotics lab
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Robot Operating System (ROS)
+* Machine Learning
+  * Statistical Models and Analysis
+  * PyTorch
+* C++
+* Python
+* Prompt Engineering
+* Planning
+* Mapping
+* Localization
 
-Publications
-======
-* Coming soon!
