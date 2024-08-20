@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hello there, my name is Behrad 😁"
+title: "Hello there, my name is Behrad and here is some high level information about me 😁."
 author_profile: true
 redirect_from: 
   - /about/
