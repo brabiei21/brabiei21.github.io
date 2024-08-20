@@ -4,8 +4,6 @@ excerpt: "The objective of the project is to track the orientation of a rigid bo
 collection: portfolio
 ---
 
-# High-Level Summary
-
 ## Introduction
 Robotic autonomy hinges on four core components: localization, planning, mapping, and control. This project focuses on localization, specifically tracking the orientation of a camera equipped with an IMU (Inertial Measurement Unit) over time. The project's goal includes validating this approach using VICON motion capture data as ground truth and creating a 3D panorama from the captured images to further verify the results.
 
@@ -37,8 +35,11 @@ The final orientation estimates show a significant improvement after optimizatio
 The generated panoramic image gives a reasonable representation of the captured environment, although some datasets exhibit distortions likely due to camera tilt.
 
 ## Figures
+![Alt text](URL or path to the image)
+
 
 - **Figure 1:** IMU Data before Processing.
+  ![Pre Processing](/images/)
 - **Figure 2:** IMU Data after Processing.
 - **Figure 3:** Euler Angles of VICON.
 - **Figure 4:** Motion Estimate Vs. VICON (Initial).
