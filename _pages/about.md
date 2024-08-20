@@ -17,10 +17,3 @@ Industry Experiences
 ======
 Companies I have worked at
 
-SpaceX
-------
-This is what I did at SpaceX
-
-NASA
-------
-This is what I did NASA
