@@ -20,10 +20,10 @@ The primary goal of this project is to design and implement a dynamic programmin
 ## Problem Formulation
 
 ### Action Space
-The action space \( \mathcal{U} \) includes the following actions: Move Forward (MF), Turn Left (TL), Turn Right (TR), Pick Up Key (PK), and Unlock Door (UD), each associated with an energy cost.
+The action space U includes the following actions: Move Forward (MF), Turn Left (TL), Turn Right (TR), Pick Up Key (PK), and Unlock Door (UD), each associated with an energy cost.
 
 ### State Space: Part A
-The state space \( \mathcal{X} \) is defined by the agent's position, direction, whether it has the key, and whether it has reached the goal. The agent’s direction is encoded as LEFT = 0, UP = 1, RIGHT = 2, DOWN = 3. States where the agent's position coincides with walls are excluded.
+The state space X is defined by the agent's position, direction, whether it has the key, and whether it has reached the goal. The agent’s direction is encoded as LEFT = 0, UP = 1, RIGHT = 2, DOWN = 3. States where the agent's position coincides with walls are excluded.
 
 ### Motion Model: Part A
 The agent's motion model describes how actions affect its state:
@@ -39,7 +39,7 @@ In the "Unknown Environment" task, the state space is extended to include possib
 The motion model for Part B includes similar actions but with additional checks for key and door locations, ensuring that the agent adapts to the discovered environment.
 
 ### Time Horizon
-The time horizon \( T \) is defined as the cardinality of the state space \( \mathcal{X} \) minus one, reflecting the maximum number of transitions the agent might make.
+The time horizon \( T \) is defined as the cardinality of the state space X minus one, reflecting the maximum number of transitions the agent might make.
 
 ### Cost Functions
 - **Intermediate Cost Function:** Assigns a cost of 1 to each action, except when the action leads directly to the goal.
