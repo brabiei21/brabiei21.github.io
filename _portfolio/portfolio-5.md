@@ -8,70 +8,69 @@ collection: portfolio
 *Full code can be provided upon request*
 
 ## Introduction
-Autonomous robotic navigation is a critical aspect of modern robotics, enabling robots to operate independently in complex environments. The development of advanced navigation systems leverages sensors, algorithms, and learning techniques to enhance safety, reduce human labor, and extend the range of tasks robots can perform. These advancements are particularly valuable in hazardous or inaccessible areas, where human intervention is impractical or dangerous.
+Autonomous robotic navigation is essential in modern robotics, allowing robots to function independently in complex environments. Advanced navigation systems combine sensors, algorithms, and learning techniques to enhance safety, reduce human involvement, and broaden the range of tasks robots can perform. These advancements are especially valuable in dangerous or hard-to-reach areas where human presence is either impractical or risky.
 
 ### Search-Based Path Planning
-Search-based path planning involves navigating a robot from one point to another by mapping the environment into a grid or graph. Algorithms like Dijkstra's or A* (A-star) are used to find the most efficient route while avoiding obstacles. This method is effective in structured environments where the layout is well-defined, allowing for precise movement planning.
+Search-based path planning involves guiding a robot from one location to another by representing the environment as a grid or network. Algorithms like Dijkstra's or A* (A-star) are used to determine the most efficient route while avoiding obstacles. This method is effective in well-structured environments with clearly defined layouts, enabling precise movement planning.
 
 ### Sampling-Based Path Planning
-Sampling-based path planning is a strategy used in complex or high-dimensional spaces where traditional grid-based methods may be impractical. Algorithms like Rapidly-exploring Random Trees (RRT) or Probabilistic Roadmaps (PRM) randomly generate points to form a roadmap of possible paths, connecting safe, navigable paths and avoiding obstacles. This approach is beneficial in large or unstructured environments, offering flexibility and computational efficiency.
+Sampling-based path planning is used in complex or multi-dimensional spaces where traditional grid-based methods might not be practical. Algorithms like Rapidly-exploring Random Trees (RRT) or Probabilistic Roadmaps (PRM) randomly generate points to create a network of potential paths, linking safe, navigable paths while avoiding obstacles. This approach is particularly useful in large or unstructured environments, offering flexibility and computational efficiency.
 
 ### Project Objectives
-The project aims to develop and evaluate motion planning algorithms in 3-D environments with rectangular obstacles. The objectives include implementing a collision-checking algorithm for safety in 3-D space, creating a search-based planning algorithm with efficient collision detection, and either developing a sampling-based planning algorithm like RRT or utilizing established motion planning libraries.
+The project focuses on developing and evaluating motion planning algorithms in three-dimensional environments with rectangular obstacles. The objectives include implementing a collision-checking algorithm to ensure safety in 3-D space, creating a search-based planning algorithm with efficient collision detection, and either developing a sampling-based planning algorithm like RRT or utilizing existing motion planning libraries.
 
 ## Problem Formulation
 
 ### Path Planning in a 3D Environment
 
-**Given:**
-- A 3D space \( \mathbb{R}^3 \) with a starting point \( s \), an endpoint \( e \), and a boundary \( B \).
-- A set of axis-aligned bounding box obstacles \( \{O_1, O_2, \dots, O_n\} \).
+**Scenario:**
+- A three-dimensional space with a defined starting point, an endpoint, and boundaries.
+- A set of rectangular obstacles that are aligned with the axes.
 
-**Objective:**
-Find a path \( P: [0, 1] \rightarrow \mathbb{R}^3 \) such that:
-- \( P(0) = s \) and \( P(1) = e \).
-- \( P(t) \) remains within \( B \) and avoids all obstacles \( O_i \).
+**Goal:**
+Identify a path that:
+- Starts at the given point and ends at the target location.
+- Remains within the defined boundaries and avoids all obstacles.
 
-**Mathematical Formulation:**
-- **Continuity Constraint:** \( P \) should be continuous.
-- **Boundary Constraint:** \( P(t) \in B \) for all \( t \).
-- **Obstacle Avoidance:** \( P(t) \not\in O_i \) for all \( t \) and \( i \).
-- **Path Optimality (optional):** Minimize \( \int_0^1 \lVert \frac{dP}{dt} \rVert \, dt \).
+**Requirements:**
+- The path must be continuous and within the boundaries.
+- The path must avoid all obstacles.
+- Optionally, the path should be optimized to minimize the total distance traveled.
 
-### Collision Detection between Line Segments and AABBs in 3D Space
-The problem is to determine whether a line segment intersects any axis-aligned bounding boxes (AABBs) in 3D space, essential for ensuring path safety.
+### Collision Detection between Line Segments and Rectangular Obstacles in 3D Space
+This involves determining whether a line segment intersects with any rectangular obstacles in three-dimensional space, which is crucial for ensuring the path's safety.
 
-**Given:**
-- An AABB characterized by its minimum and maximum corners.
-- A line segment specified by two endpoints.
+**Scenario:**
+- A rectangular obstacle defined by its minimum and maximum corners.
+- A line segment defined by its two endpoints.
 
-**Objective:**
-Determine if the line segment intersects any AABB within the 3D space by:
-- Parameterizing the segment and checking for intersections with the bounding limits of each AABB.
+**Goal:**
+Determine if the line segment intersects any rectangular obstacles in the 3D space by:
+- Describing the segment and checking for intersections with the boundaries of each obstacle.
 
 ## Technical Approach
 
 ### Pybullet's Collision Detection
-We used the PyBullet library's \texttt{rayTest()} function for collision detection. This function uses broadphase and narrowphase detection to efficiently identify potential intersections between a ray and objects in the simulation environment. The function returns detailed hit information, facilitating various applications in robotics and interactive environments.
+We utilized the PyBullet library’s collision detection function for determining potential intersections between a ray and objects in the simulation environment. This function efficiently identifies possible intersections and provides detailed information, which is valuable in robotics and interactive environments.
 
 ### A-Star Algorithm
-The A* algorithm finds the shortest path by minimizing the cost function \( f(n) = g(n) + h(n) \), where \( g(n) \) is the actual cost from the start node, and \( h(n) \) is a heuristic estimate to the goal.
+The A* algorithm finds the shortest path by minimizing a cost function that combines the actual cost from the start and an estimated cost to the goal.
 
-**Key Components:**
-- **Heuristic Function:** Uses Euclidean distance for estimation.
-- **Motion Possibilities:** Determines valid movements from the current node while checking for collisions and boundary constraints.
-- **Path Reconstruction:** Backtracks from the goal to the start node to yield the complete path.
+**Key Elements:**
+- **Heuristic Function:** Estimates the distance to the goal.
+- **Movement Options:** Identifies valid movements from the current position while checking for collisions and boundary constraints.
+- **Path Reconstruction:** Traces back from the goal to the start to produce the complete path.
 
 ### Bi-Directional RRT Algorithm
-The Bi-Directional Rapidly-exploring Random Trees (Bi-Directional RRT) algorithm builds two trees, one from the start and the other from the goal, to find paths in high-dimensional spaces.
+The Bi-Directional Rapidly-exploring Random Trees (Bi-Directional RRT) algorithm builds two trees, one starting from the initial point and the other from the goal, to find paths in complex spaces.
 
-**Key Components:**
-- **Step Size:** Defines the distance between nodes in the trees.
-- **Goal Bias:** Adjusts how often the random node is set to the goal.
-- **Maximum Iterations:** Sets a stopping condition for the algorithm.
+**Key Elements:**
+- **Step Size:** Sets the distance between points in the trees.
+- **Goal Bias:** Adjusts how often the random point is directed toward the goal.
+- **Maximum Iterations:** Determines when the algorithm should stop.
 
 ## Results
-The results indicate that Bi-Directional RRT generally finds shorter paths than A* but takes longer in environments with many obstacles. A* provides smoother paths in complex environments, while Bi-Directional RRT is more effective in simpler environments. The number of samples required by Bi-Directional RRT varies with environmental complexity, affecting runtime.
+The results showed that Bi-Directional RRT generally produces shorter paths than A-star, though it takes longer in environments with many obstacles. A-star tends to create smoother paths in complex environments, while Bi-Directional RRT is more effective in simpler settings. The number of samples required by Bi-Directional RRT varies with environmental complexity, influencing the time it takes to find a solution.
 
 **Figure 1:** Single Cube Map.
 <table>
@@ -131,4 +130,7 @@ The results indicate that Bi-Directional RRT generally finds shorter paths than 
 
 
 ## Conclusion
-The project successfully developed and evaluated motion planning algorithms in 3-D environments with rectangular obstacles. The collision-checking algorithms ensured path safety, while search-based and sampling-based planning algorithms were tested for their efficiency and adaptability. A* was found to be more effective in complex environments, while Bi-Directional RRT excelled in simpler settings, underscoring the importance of algorithm selection based on specific environmental challenges.
+The project successfully developed and evaluated motion planning algorithms in three-dimensional environments with rectangular obstacles. The collision-checking algorithms ensured path safety, while the search-based and sampling-based planning algorithms were tested for their efficiency and adaptability. A* was found to be more effective in complex environments, while Bi-Directional RRT excelled in simpler settings, highlighting the importance of choosing the right algorithm based on the specific challenges of the environment.
+
+
+
