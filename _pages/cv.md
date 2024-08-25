@@ -37,7 +37,7 @@ Work experience
   * Initiated a cross-functional collaboration between the onboard SW team and data team to validate metrics and automate logging.
 
 * **Takeda - Reliability Intern (June 2021 - September 2021)**
-  * Served as the primary liaison between Takeda and the vendor for transitioning the facility from preventative to predictive maintenance.
+  * Served as the primary liaison between Takeda and the vendor for transitioning the facility from preventive to predictive maintenance.
   * Scheduled sensor installation, coordinating between the vendor and manufacturing teams to minimize production disruption.
   * Collaborated with departments to secure necessary approvals for temporary shutdowns, enabling smooth sensor deployment.
   * Contributed to a proposal for expanding predictive maintenance, securing funding for additional sensor installations in another building.
