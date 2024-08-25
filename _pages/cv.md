@@ -65,3 +65,21 @@ Skills
 * Mapping
 * Localization
 
+Relevant Courses
+======
+* CSE 298 - Independent Study (Analyzing LLMs for NER)
+* CSE 258R - Recommender Systems & Web Mining
+* CSE 250A - Probabilistic Reasoning & Learning
+* ECE 285 - Special Topics/Signal & Image/Robotic: Intro to Visual Learning
+* ECE 276B - Planning & Learning in Robotics
+* ECE 276A - Sensing & Estimation in Robotics
+* ECE 272A - Stochastic Processes & Dynamic Systems I
+* ECE 271A - Statistical Learning I
+* ECE 269 - Linear Algebra and Application
+* ECE 180 - Topics in ECE: Autonomous Driving in Real World
+* ECE 176 - Intro to Deep Learning & Applications
+* ECE 175B - Probabilistic Reasoning & Graphical Models
+* ECE 175A - Pattern Recognition and Machine Learning
+* ECE 174 - Intro/Linear & Nonlinear Optimization
+* ECE 171A - Linear Control System Theory
+* ECE 143 - Programming for Data Analysis
