@@ -1,5 +1,5 @@
 ---
-title: "Motion Planning"
+title: "Motion Planning (Click Here!)"
 excerpt: "The overall objective of this assignment was to find valid paths from a starting point to an endpoint in a variety of environments. The project 1) implements a collision checker to ensure your path does not collide with any obstacles, 2) implements a search-based algorithm to find a path, and 3) implements a sampling-based algorithm to find a path. <br/><img src='/images/flappy_bird_b_2.png'>"
 collection: portfolio
 ---

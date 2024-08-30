@@ -1,5 +1,5 @@
 ---
-title: "Infinite-Horizon Stochastic Optimal Control"
+title: "Infinite-Horizon Stochastic Optimal Control (Click Here!)"
 excerpt: "The main objective of the project was to implement algorithms that will derive optimal control policies for a differential drive vehicle to trace a given trajectory. The two algorithms that I explored in this project were receding-horizon Certainty Equivalent Control (CEC) and Generalized Policy Iteration (GPI).<br/><img src='/images/parta.png' width='400' height='400'>"
 collection: portfolio
 ---

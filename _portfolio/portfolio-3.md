@@ -1,5 +1,5 @@
 ---
-title: "Visual-Inertial SLAM"
+title: "Visual-Inertial SLAM (Click Here!)"
 excerpt: "The primary objective of this project was to develop a visual-inertial simultaneous localization and mapping (SLAM) system using an extended Kalman filter (EKF). I utilized synchronized measurements from an inertial measurement unit (IMU) and a stereo camera, alongside the intrinsic camera calibration and the extrinsic calibration between the two sensors. The approach began with the implementation of the prediction step of the EKF to estimate motion and trajectory. Following this, I implemented the update step of the EKF to refine the initial estimates of landmark locations. Finally, I integrated both steps to achieve a fully functional VI-SLAM system using the EKF.<br/><img src='/images/10_3.png' width='500' height='300'>"
 collection: portfolio
 ---

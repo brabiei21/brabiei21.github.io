@@ -1,5 +1,5 @@
 ---
-title: "Dynamic Programming"
+title: "Dynamic Programming (Click Here!)"
 excerpt: "This project involved developing an optimal navigation policy for an environment using Dynamic Programming. The task required implementing the algorithm to function effectively in both known and unknown environments.<br/><img src='/images/random_envs_31.gif'>"
 collection: portfolio
 ---
