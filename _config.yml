@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Behrad's Homepage"
+title                    : "Behrad Rabiei"
 title_separator          : "-"
 name                     : &name "Behrad Rabiei"
 description              : &description "I have a Masters from University of California - San Diego in Robotics and I am extremely excited about Localization, Mapping, and Planning."
